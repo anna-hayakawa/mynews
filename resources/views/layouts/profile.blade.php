@@ -13,7 +13,7 @@
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" />
         <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
-        <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/profile.css') }}" />
     </head>
     <body>
         <div id="app">
