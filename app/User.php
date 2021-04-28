@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Hash;
 
 class User extends Authenticatable
 {
@@ -37,3 +38,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+
+// User::create([
+//     'name' => "山本",
+//     'email' => "yamamoto@techboost.com",
+//     'password' => Hash::make("pass02")
+// ]);
