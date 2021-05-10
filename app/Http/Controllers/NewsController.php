@@ -11,7 +11,7 @@ class NewsController extends Controller
     {
         $cond_title = $request->cond_title;
         if ($cond_title != '') {
-            $posts = News::where('title', $cond_title).orderBy('update_at', 'desc')->get();
+            $posts = News::where('title', $cond_title)->orderBy('update_at', 'desc')->get();
         } else {
             $posts = News::all()->sortByDesc('update_at');
         }
